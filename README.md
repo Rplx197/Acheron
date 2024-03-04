@@ -5,3 +5,5 @@ Tema
 - Toko bunga 
 - Toko buket 
 - Gym
+- Salon kecantikan/terapis
+
