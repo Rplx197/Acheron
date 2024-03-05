@@ -1,0 +1,66 @@
+/* Dropdown menu for screens 600px or less */
+@media screen and (max-width: 600px) {
+  .dropdown {
+    display: block;
+  }
+
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    font-size: 14px;
+    text-align: left;
+    list-style: none;
+    background-color: #ffffff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+  }
+
+  .dropdown-menu.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: 3px 10px;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+  }
+
+  .dropdown-menu.dropdown-item:hover,
+  .dropdown-menu.dropdown-item:focus {
+    color: #16181b;
+    text-decoration: none;
+    background-color: #f8f9fa;
+  }
+
+  .dropdown-menu.active {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #343a40;
+  }
+
+  .dropdown-menu.disabled {
+    color: #6c757d;
+    pointer-events: none;
+    background-color: transparent;
+  }
+
+  .dropdown-menu.disabled:hover {
+    color: #6c757d;
+    text-decoration: none;
+  }
+
+  .show {
+    display: block;
+  }
+}

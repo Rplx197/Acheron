@@ -4,53 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="/rafli/style.css" rel="stylesheet"/>
     <script src="/js/bootstrap.bundle.min.js"></script>
-    <style>
-      /* Header*/
-      .fix-top,.fix-bottom{
-        position:fixed;
-        width:100%;
-        height: auto;
-        z-index:1;
-      }
-      .fix-top{
-        top:0;
-      }
-      .fix-bottom{
-        bottom:0
-      }
-      @media screen and (max-width: 600px) {
-        
-      }
-      
-    </style>
 </head>
 <body>
-  <div class="fix-top">
-    <header class="p-3 text-bg-dark">
-      <div class="container">
-        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-  
-          <ul class="nav col-8 col-lg-auto me-lg-auto justify-content-center mb-md-0" >
-            <li><a href="#" class="nav-link px-2 text-warning">Home</a></li>
-            <li><a href="#" class="nav-link px-2 text-white">Features</a></li>
-            <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
-            <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
-            <li><a href="#" class="nav-link px-2 text-white">About</a></li>
-          </ul>
-          
-            <button type="button" class="btn btn-outline-light me-2">Login</button>
-            <button type="button" class="btn btn-warning">Sign-up</button>
+  <div>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
         </div>
-      </div>
+      </nav>
     </header>
   </div>
   
   <main>
     
+    <div class="overflow-hidden" style="max-height: 30vh;">
+      <div class="container">
+        <img src="download.jpg" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy">
+      </div>
+    </div>
+
     <div class="px-4 py-5 my-5 text-center">
-      <img class="d-block mx-auto mb-4" src="/gg gaming adik adik/img/GG9MT5ua0AEhgWa.jpg" alt="" width="50%">
+      <img class="d-block mx-auto mb-4" src="download.jpg" alt="" >
       <h1 class="display-5 fw-bold text-body-emphasis">Centered hero</h1>
       <div class="col-lg-6 mx-auto">
         <p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
@@ -72,11 +81,7 @@
           <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
         </div>
       </div>
-      <div class="overflow-hidden" style="max-height: 30vh;">
-        <div class="container px-5">
-          <img src="/gg gaming adik adik/img/GG9MT5ua0AEhgWa.jpg" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy">
-        </div>
-      </div>
+      
     </div>
   
     <div class="b-example-divider"></div>
