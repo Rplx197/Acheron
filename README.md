@@ -1,6 +1,6 @@
 Tema
 - tempat les 
-- Dealer/rental mobil 
+- Dealer/rental mobil (bima[dealer])
 - Cafee/tempat makan (dimas)
 - Toko bunga 
 - Toko buket 
