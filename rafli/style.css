@@ -58,6 +58,11 @@
   border-color: transparent;
 }
 
+.btn-primary:hover{
+  background-color: #42164e;
+  border-color: white;
+}
+
 .button-joinus {
   margin-top: 3px;
   border-radius: 12px;
