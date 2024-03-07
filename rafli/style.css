@@ -1,29 +1,96 @@
 @media (max-width: 991px) {
-  .nav-link{
+  .nav-link {
     padding: 10px;
-
   }
   .nav-link:hover {
-    border-bottom: 3px solid #00f;
+    border-bottom: 3px solid #662279;
   }
-  .navbar-bg{
+  .navbar-bg {
     background-color: white;
   }
 }
 
 /* desktop */
 @media (min-width: 992px) {
+  #navbarNav {
+    text-transform: uppercase;
+  }
+
   .nav-link:hover::after {
     content: "";
-    border-bottom: 3px solid #00f;
+    border-bottom: 3px solid #662279;
     display: block;
     width: 50%;
     margin: auto;
     padding: 5px;
     margin-bottom: -8px;
+    color: white !important;
+  }
+
+  .nav-link:hover {
+    color: white;
+  }
+
+  .nav-link:visited {
+    background-color: #662279 !important;
+    font-weight: bold;
+  }
+
+  .nav-link:active {
+    background-color: #662279;
+    font-weight: bold;
+  }
+
+  .navbar-brand:hover {
+    color: white;
+  }
+
+  .navbar-brand,
+  .nav-link {
+    color: white;
+    text-shadow: 1px 3px 1px rgba(0, 0, 0, 0.5);
+    font-size: larger !important;
   }
 }
 
-.button{
-  border-radius: 40px;
+.btn-primary{
+  background-color: #662279;
+  border-color: transparent;
+}
+
+.btn-primary:hover{
+  background-color: #42164e;
+  border-color: white;
+}
+
+.button-joinus {
+  margin-top: 3px;
+  border-radius: 12px;
+}
+
+.jumbotron {
+  background-image: url("images/workshop.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 740px;
+}
+
+.jumbotron .display-5 {
+  color: white;
+  margin-top: 200px;
+  text-shadow: 1px 3px 1px rgba(0, 0, 0, 0.5);
+}
+
+.jumbotron p {
+  color: white;
+  text-shadow: 1px 3px 1px rgba(0, 0, 0, 0.5);
+}
+
+.blur {
+  backdrop-filter: blur(10px);
+}
+
+.img-fancy-border{
+  border-radius: 75% 25% 69% 31% / 51% 45% 55% 49% ;
 }
