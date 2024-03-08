@@ -4,7 +4,7 @@ Tema
 - Dealer/rental mobil (bima[dealer])
 - Cafee/tempat makan (dimas)
 - Toko bunga 
-- Toko buket 
+- Toko buket (aziz)
 - Gym
 - Salon kecantikan/terapis
 
