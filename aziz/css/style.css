@@ -35,15 +35,16 @@ body{
   }
 /* start navbar */
 .navbar{
-    background-color: #FC819E;
+    background-image: linear-gradient(#F7418F, #FC819E);
 }
 .navbar .navbar-nav .nav-link{
+    font-family: Impact;
     color: var(--white-color);
     text-transform: uppercase;
-    text-align: center;
+    text-align: left;
     font-size: 13px;
     text-decoration: none;
-    background: #FC819E;
+    
     color: black;
 }
 .navbar .navbar-nav .nav-link:active,.navbar .navbar-nav .nav-link:focus,.navbar .navbar-nav .nav-link:hover{
