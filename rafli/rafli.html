@@ -4,12 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link href="/css/bootstrap.min.css" rel="stylesheet" />
-  <script src="/js/bootstrap.bundle.min.js"></script>
-  <link href="css/style.css" rel="stylesheet" />
-  <link href="css/responsive.css" rel="stylesheet" />
-
+  <title>Workshop</title>
+  <!-- <link href="/css/bootstrap.min.css" rel="stylesheet" /> -->
+  <link rel="stylesheet" href="/css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="css/responsive.css"/>
+  
 </head>
 
 <body>
@@ -22,7 +22,7 @@
     </div>
 
     <!-- header section strats -->
-    <header class="header_section">
+    <nav class="header_section">
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg custom_nav-container ">
           <a class="navbar-brand" href="index.html">
@@ -31,13 +31,13 @@
             </span>
           </a>
 
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class=""> </span>
+            <span class=""></span>
           </button>
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav  ">
+            <ul class="navbar-nav">
               <li class="nav-item active">
                 <a class="nav-link" href="index.html">Home</a>
               </li>
@@ -65,10 +65,11 @@
           </div>
         </nav>
       </div>
-    </header>
-    <!-- NavBar -->
-    <section class="slider_section ">
+    </nav>
+    <!-- header section ends -->
 
+    <!-- slider section starts -->
+    <section class="slider_section ">
       <div class="container ">
         <div class="row">
           <div class="col-md-6 ">
@@ -96,140 +97,211 @@
           </div>
         </div>
       </div>
-  </div>
-  
+  </section>
+  <!-- slider section ends -->
+
+  <section class="service_section layout_padding">
+    <div class="service_container">
+      <div class="container ">
+        <div class="heading_container heading_center">
+          <h2>
+            Our <span>Services</span>
+          </h2>
+          <p>
+            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-md-4 ">
+            <div class="box ">
+              <div class="img-box">
+                <img src="images/s1.png" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Currency Wallet
+                </h5>
+                <p>
+                  fact that a reader will be distracted by the readable content of a page when looking at its layout.
+                  The
+                  point of using
+                </p>
+                <a href="">
+                  Read More
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 ">
+            <div class="box ">
+              <div class="img-box">
+                <img src="images/s2.png" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Security Storage
+                </h5>
+                <p>
+                  fact that a reader will be distracted by the readable content of a page when looking at its layout.
+                  The
+                  point of using
+                </p>
+                <a href="">
+                  Read More
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 ">
+            <div class="box ">
+              <div class="img-box">
+                <img src="images/s3.png" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Expert Support
+                </h5>
+                <p>
+                  fact that a reader will be distracted by the readable content of a page when looking at its layout.
+                  The
+                  point of using
+                </p>
+                <a href="">
+                  Read More
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="btn-box">
+          <a href="">
+            View All
+          </a>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <main>
-    <div class="b-example-divider"></div>
-    <div class="jumbotron blur">
-      <div class="container p-5 mb-4 rounded-3">
-        <div class="container-fluid py-5 blur">
-          <h1 class="display-5 fw-bold">jumbotron</h1>
-          <p class="col-md-8 fs-4">Using a series of utilities, you can create this jumbotron, just like the one in
-            previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to your
-            liking.</p>
-          <button class="btn btn-primary btn-lg" type="button">Example button</button>
-        </div>
+  <!-- end service section -->
+
+
+  <!-- about section -->
+
+  <section class="about_section layout_padding">
+    <div class="container  ">
+      <div class="heading_container heading_center">
+        <h2>
+          About <span>Us</span>
+        </h2>
+        <p>
+          Magni quod blanditiis non minus sed aut voluptatum illum quisquam aspernatur ullam vel beatae rerum ipsum voluptatibus
+        </p>
       </div>
-    </div>
-
-    <svg id="wave" style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 220" version="1.1"
-      xmlns="http://www.w3.org/2000/svg">
-      <defs>
-        <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
-          <stop stop-color="rgba(73.936, 25.831, 86.888, 1)" offset="0%"></stop>
-          <stop stop-color="rgba(185.786, 20.353, 230.325, 1)" offset="100%"></stop>
-        </linearGradient>
-      </defs>
-      <path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)"
-        d="M0,44L60,62.3C120,81,240,117,360,113.7C480,110,600,66,720,40.3C840,15,960,7,1080,33C1200,59,1320,117,1440,150.3C1560,183,1680,191,1800,179.7C1920,169,2040,139,2160,139.3C2280,139,2400,169,2520,161.3C2640,154,2760,110,2880,95.3C3000,81,3120,95,3240,110C3360,125,3480,139,3600,124.7C3720,110,3840,66,3960,66C4080,66,4200,110,4320,110C4440,110,4560,66,4680,40.3C4800,15,4920,7,5040,25.7C5160,44,5280,88,5400,88C5520,88,5640,44,5760,33C5880,22,6000,44,6120,58.7C6240,73,6360,81,6480,95.3C6600,110,6720,132,6840,135.7C6960,139,7080,125,7200,99C7320,73,7440,37,7560,25.7C7680,15,7800,29,7920,58.7C8040,88,8160,132,8280,128.3C8400,125,8520,73,8580,47.7L8640,22L8640,220L8580,220C8520,220,8400,220,8280,220C8160,220,8040,220,7920,220C7800,220,7680,220,7560,220C7440,220,7320,220,7200,220C7080,220,6960,220,6840,220C6720,220,6600,220,6480,220C6360,220,6240,220,6120,220C6000,220,5880,220,5760,220C5640,220,5520,220,5400,220C5280,220,5160,220,5040,220C4920,220,4800,220,4680,220C4560,220,4440,220,4320,220C4200,220,4080,220,3960,220C3840,220,3720,220,3600,220C3480,220,3360,220,3240,220C3120,220,3000,220,2880,220C2760,220,2640,220,2520,220C2400,220,2280,220,2160,220C2040,220,1920,220,1800,220C1680,220,1560,220,1440,220C1320,220,1200,220,1080,220C960,220,840,220,720,220C600,220,480,220,360,220C240,220,120,220,60,220L0,220Z">
-      </path>
-    </svg>
-
-    <div class="container col-xxl-8 px-4 py-5" style="margin-top: -100px; margin-bottom: -50px;">
-      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-        <div class="col-10 col-sm-8 col-lg-6">
-          <img src="images/logo visual studio.jpg" class="img-fancy-border d-block mx-lg-auto img-fluid"
-            alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+      <div class="row">
+        <div class="col-md-6 ">
+          <div class="img-box">
+            <img src="images/about-img.png" alt="">
+          </div>
         </div>
-        <div class="col-lg-6">
-          <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Responsive left-aligned hero with image</h1>
-          <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most
-            popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system,
-            extensive prebuilt components, and powerful JavaScript plugins.</p>
-          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
-            <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
+        <div class="col-md-6">
+          <div class="detail-box">
+            <h3>
+              We Are Finexo
+            </h3>
+            <p>
+              There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
+              in some form, by injected humour, or randomised words which don't look even slightly believable. If you
+              are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in
+              the middle of text. All
+            </p>
+            <p>
+              Molestiae odio earum non qui cumque provident voluptates, repellendus exercitationem, possimus at iste corrupti officiis unde alias eius ducimus reiciendis soluta eveniet. Nobis ullam ab omnis quasi expedita.
+            </p>
+            <a href="">
+              Read More
+            </a>
           </div>
         </div>
       </div>
     </div>
+  </section>
 
-    <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 220" version="1.1"
-      xmlns="http://www.w3.org/2000/svg">
-      <defs>
-        <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
-          <stop stop-color="rgba(73.936, 25.831, 86.888, 1)" offset="0%"></stop>
-          <stop stop-color="rgba(185.786, 20.353, 230.325, 1)" offset="100%"></stop>
-        </linearGradient>
-      </defs>
-      <path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)"
-        d="M0,88L60,91.7C120,95,240,103,360,106.3C480,110,600,110,720,91.7C840,73,960,37,1080,29.3C1200,22,1320,44,1440,66C1560,88,1680,110,1800,117.3C1920,125,2040,117,2160,128.3C2280,139,2400,169,2520,165C2640,161,2760,125,2880,106.3C3000,88,3120,88,3240,91.7C3360,95,3480,103,3600,121C3720,139,3840,169,3960,161.3C4080,154,4200,110,4320,91.7C4440,73,4560,81,4680,80.7C4800,81,4920,73,5040,80.7C5160,88,5280,110,5400,99C5520,88,5640,44,5760,55C5880,66,6000,132,6120,154C6240,176,6360,154,6480,154C6600,154,6720,176,6840,179.7C6960,183,7080,169,7200,161.3C7320,154,7440,154,7560,146.7C7680,139,7800,125,7920,99C8040,73,8160,37,8280,44C8400,51,8520,103,8580,128.3L8640,154L8640,220L8580,220C8520,220,8400,220,8280,220C8160,220,8040,220,7920,220C7800,220,7680,220,7560,220C7440,220,7320,220,7200,220C7080,220,6960,220,6840,220C6720,220,6600,220,6480,220C6360,220,6240,220,6120,220C6000,220,5880,220,5760,220C5640,220,5520,220,5400,220C5280,220,5160,220,5040,220C4920,220,4800,220,4680,220C4560,220,4440,220,4320,220C4200,220,4080,220,3960,220C3840,220,3720,220,3600,220C3480,220,3360,220,3240,220C3120,220,3000,220,2880,220C2760,220,2640,220,2520,220C2400,220,2280,220,2160,220C2040,220,1920,220,1800,220C1680,220,1560,220,1440,220C1320,220,1200,220,1080,220C960,220,840,220,720,220C600,220,480,220,360,220C240,220,120,220,60,220L0,220Z">
-      </path>
-    </svg>
-    <div class="b-example-divider"></div>
+  <!-- end about section -->
 
-    <div class="container col-xl-10 col-xxl-8 px-4 py-5">
-      <div class="row align-items-center g-lg-5 py-5">
-        <div class="col-lg-7 text-center text-lg-start">
-          <h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-3">Vertically centered hero sign-up form</h1>
-          <p class="col-lg-10 fs-4">Below is an example form built entirely with Bootstrap’s form controls. Each
-            required form group has a validation state that can be triggered by attempting to submit the form without
-            completing it.</p>
-        </div>
-        <div class="col-md-10 mx-auto col-lg-5">
-          <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
-            <div class="form-floating mb-3">
-              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-              <label for="floatingInput">Email address</label>
-            </div>
-            <div class="form-floating mb-3">
-              <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-              <label for="floatingPassword">Password</label>
-            </div>
-            <div class="checkbox mb-3">
-              <label>
-                <input type="checkbox" value="remember-me"> Remember me
-              </label>
-            </div>
-            <button class="w-100 btn btn-lg btn-primary" type="submit">Sign up</button>
-            <hr class="my-4">
-            <small class="text-body-secondary">By clicking Sign up, you agree to the terms of use.</small>
-          </form>
-        </div>
+  <!-- why section -->
+
+  <section class="why_section layout_padding">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>
+          Why Choose <span>Us</span>
+        </h2>
       </div>
-    </div>
-
-    <div class="b-example-divider"></div>
-
-    <div class="container my-5">
-      <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
-        <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
-          <h1 class="display-4 fw-bold lh-1 text-body-emphasis">Border hero with cropped image and shadows</h1>
-          <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most
-            popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system,
-            extensive prebuilt components, and powerful JavaScript plugins.</p>
-          <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
-            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold">Primary</button>
-            <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
+      <div class="why_container">
+        <div class="box">
+          <div class="img-box">
+            <img src="images/w1.png" alt="">
+          </div>
+          <div class="detail-box">
+            <h5>
+              Expert Management
+            </h5>
+            <p>
+              Incidunt odit rerum tenetur alias architecto asperiores omnis cumque doloribus aperiam numquam! Eligendi corrupti, molestias laborum dolores quod nisi vitae voluptate ipsa? In tempore voluptate ducimus officia id, aspernatur nihil.
+              Tempore laborum nesciunt ut veniam, nemo officia ullam repudiandae repellat veritatis unde reiciendis possimus animi autem natus
+            </p>
           </div>
         </div>
-        <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
-          <img class="rounded-lg-3" src="/gg gaming adik adik/img/GG9MT5ua0AEhgWa.jpg" alt="" width="720">
+        <div class="box">
+          <div class="img-box">
+            <img src="images/w2.png" alt="">
+          </div>
+          <div class="detail-box">
+            <h5>
+              Secure Investment
+            </h5>
+            <p>
+              Incidunt odit rerum tenetur alias architecto asperiores omnis cumque doloribus aperiam numquam! Eligendi corrupti, molestias laborum dolores quod nisi vitae voluptate ipsa? In tempore voluptate ducimus officia id, aspernatur nihil.
+              Tempore laborum nesciunt ut veniam, nemo officia ullam repudiandae repellat veritatis unde reiciendis possimus animi autem natus
+            </p>
+          </div>
         </div>
-      </div>
-    </div>
-
-    <div class="b-example-divider"></div>
-
-    <div class="bg-dark text-secondary px-4 py-5 text-center">
-      <div class="py-5">
-        <h1 class="display-5 fw-bold text-white">Dark color hero</h1>
-        <div class="col-lg-6 mx-auto">
-          <p class="fs-5 mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s
-            most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system,
-            extensive prebuilt components, and powerful JavaScript plugins.</p>
-          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-            <button type="button" class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold">Custom button</button>
-            <button type="button" class="btn btn-outline-light btn-lg px-4">Secondary</button>
+        <div class="box">
+          <div class="img-box">
+            <img src="images/w3.png" alt="">
+          </div>
+          <div class="detail-box">
+            <h5>
+              Instant Trading
+            </h5>
+            <p>
+              Incidunt odit rerum tenetur alias architecto asperiores omnis cumque doloribus aperiam numquam! Eligendi corrupti, molestias laborum dolores quod nisi vitae voluptate ipsa? In tempore voluptate ducimus officia id, aspernatur nihil.
+              Tempore laborum nesciunt ut veniam, nemo officia ullam repudiandae repellat veritatis unde reiciendis possimus animi autem natus
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img-box">
+            <img src="images/w4.png" alt="">
+          </div>
+          <div class="detail-box">
+            <h5>
+              Happy Customers
+            </h5>
+            <p>
+              Incidunt odit rerum tenetur alias architecto asperiores omnis cumque doloribus aperiam numquam! Eligendi corrupti, molestias laborum dolores quod nisi vitae voluptate ipsa? In tempore voluptate ducimus officia id, aspernatur nihil.
+              Tempore laborum nesciunt ut veniam, nemo officia ullam repudiandae repellat veritatis unde reiciendis possimus animi autem natus
+            </p>
           </div>
         </div>
       </div>
+      <div class="btn-box">
+        <a href="">
+          Read More
+        </a>
+      </div>
     </div>
-
-    <div class="b-example-divider mb-0"></div>
-  </main>
+  </section>
   <footer class="bg-light text-center text-lg-start mt-5">
     <div class="text-center p-3">
       © 2023 Copyright:
@@ -238,6 +310,9 @@
   </footer>
   <script src="js/bootstrap.min.js"></script>
   </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </body>
 
 </html>
