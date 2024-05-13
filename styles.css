@@ -20,3 +20,111 @@ nav{
     height: 100%;
     width: 100%;
 }
+
+.service{
+    margin: 0 127.5px 168px 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    box-sizing: border-box;
+}
+
+.our-service {
+    margin: 0 8.6px 26.3px 0;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 64px;
+    color: #A1E2FD;
+  }
+
+.container {
+    margin: 0 51px 63px 51px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: flex-start;
+    width: 984px;
+    box-sizing: border-box;
+  }
+.container-10 {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    box-sizing: border-box;
+  }
+.container-11 {
+    border-radius: 100px;
+    border: 10px solid #A0E1FD;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 123.7px 67.4px 104px 47px;
+    width: fit-content;
+    box-sizing: border-box;
+  }
+.dryer {
+    margin-top: 4px;
+    width: 112px;
+    height: 112px;
+  }
+.dryer-explanation {
+    margin: 0 122.9px 72px 0;
+    display: inline-block;
+    text-align: center;
+    overflow-wrap: break-word;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 24px;
+    color: #6AC6ED;
+  }
+
+.iron {
+    margin-bottom: 4px;
+    width: 112px;
+    height: 112px;
+  }
+.iron-explanation {
+    margin-right: 136.9px;
+    text-align: center;
+    overflow-wrap: break-word;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 24px;
+    color: #6AC6ED;
+  }
+
+.coin {
+    margin: 2px 0;
+    width: 112px;
+    height: 112px;
+  }
+.coin-explanation {
+    margin: 2px 130.4px 106px 0;
+    display: inline-block;
+    text-align: center;
+    overflow-wrap: break-word;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 24px;
+    color: #6AC6ED;
+  }
+
+.van {
+    margin-top: 4px;
+    width: 112px;
+    height: 112px;
+  }
+
+.van-explanation {
+    margin: 2px 0 70px 0;
+    display: inline-block;
+    text-align: center;
+    overflow-wrap: break-word;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 24px;
+    color: #6AC6ED;
+  }
