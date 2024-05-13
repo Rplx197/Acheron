@@ -1,6 +1,6 @@
 Bagian
--Home :
--About :
--Service :
--Paket Laundry :
--Contact :
+-Home : Rafli
+-About : Bima
+-Service : aziz
+-Paket Laundry : Alvigo
+-Contact : Dimas
