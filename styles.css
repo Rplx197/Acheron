@@ -123,13 +123,13 @@ nav{
   }
   
 .dryer {
-    margin: 0 90px 0 90px ;
-    width: 80px;
-    height: 80px;
+    margin-top: 4px;
+    width: 112px;
+    height: 112px;
   }
 
 .dryer-explanation {
-    margin-left: auto;
+    margin: 0 122.9px 72px 0;
     display: inline-block;
     text-align: center;
     overflow-wrap: break-word;
@@ -140,13 +140,13 @@ nav{
   }
 
 .iron {
-    margin: 0 90px 0 90px ;
-    width: 80px;
-    height: 80px;
+    margin-top: 4px;
+    width: 112px;
+    height: 112px;
   }
 
 .iron-explanation {
-    margin-top: auto;
+    margin-right: 136.9px;
     text-align: center;
     overflow-wrap: break-word;
     font-family: 'Poppins';
@@ -156,13 +156,13 @@ nav{
   }
 
 .coin {
-    margin: 0 90px 0 90px ;
-    width: 80px;
-    height: 80px;
+    margin: 2px 0;
+    width: 112px;
+    height: 112px;
   }
   
 .coin-explanation {
-    margin-top: auto;
+    margin: 2px 130.4px 106px 0;
     display: inline-block;
     text-align: center;
     overflow-wrap: break-word;
@@ -173,13 +173,13 @@ nav{
   }
 
 .van {
-    margin: 0 90px 0 90px ;
-    width: 80px;
-    height: 80px;
+    margin-top: 4px;
+    width: 112px;
+    height: 112px;
   }
 
 .van-explanation {
-    margin-right: auto;
+    margin: 2px 0 70px 0;
     display: inline-block;
     text-align: center;
     overflow-wrap: break-word;
