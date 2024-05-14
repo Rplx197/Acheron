@@ -101,12 +101,12 @@ nav{
 
   
 .our-service {
-    margin: 0 8.6px 26.3px 0;
+    margin: 180px 8.6px 26.3px 0;
     display: block;
     overflow-wrap: break-word;
     font-family: 'Poppins';
     font-weight: 700;
-    font-size: 20px; /* Ukuran font tetap */
+    font-size: 40px; /* Ukuran font tetap */
     color: #A1E2FD;
     text-align: center; /* Pastikan teks berada di tengah */
   }
