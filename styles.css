@@ -165,7 +165,7 @@ nav{
     justify-content: center; /* Memusatkan elemen secara horizontal */
     align-items: center; /* Menyelaraskan item secara vertikal di tengah */
     border: 5px solid #6AC6ED; /* Border dengan ketebalan 10px dan warna biru */
-    padding: 15px; /* Padding di dalam setiap elemen */
+    padding: 10px; /* Padding di dalam setiap elemen */
     border-radius: 3vw; /* Membuat sudut border menjadi persegi tetapi responsif */
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan */
     flex-wrap: nowrap; /* Mencegah elemen membungkus ke baris berikutnya */
