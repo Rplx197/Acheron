@@ -1,5 +1,6 @@
 *{
     font-family: 'Poppins';
+    font-weight: 700em;
 }
 
 nav{
@@ -252,6 +253,7 @@ nav{
     display: flex; /* Mengaktifkan flexbox */
     justify-content: center; /* Posisikan konten secara horizontal di tengah */
     align-items: center; /* Posisikan konten secara vertikal di tengah */
+    background-color: #6AC6ED;
   }
   
   .menu-logo {
