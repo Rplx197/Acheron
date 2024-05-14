@@ -148,49 +148,79 @@ nav{
     width: 100%;
 }
 
+.ambatron{
+    position: relative;
+    height: 1100px;
+    overflow: hidden;
+}
+
+.ambatron .vektor1{
+    float: right; /* Meletakkan vektor 1 di sebelah kanan */
+    margin-right: 20px; /* Menambahkan jarak antara vektor 1 dan konten lainnya */
+    background-image: url('assets/images/Vector\ 4.png');
+    height: 100%; /* Atur ketinggian sesuai kebutuhan */
+    background-size: cover;
+}
+
+
+.ambatron .vektor2{
+    float: left; /* Meletakkan vektor 2 di sebelah kiri */
+    margin-left: 20px; /* Menambahkan jarak antara vektor 2 dan konten lainnya */
+    background-image: url('assets/images/Vector\ 9.png');
+    height: 100%; /* Atur ketinggian sesuai kebutuhan */
+    background-size: cover;
+}
+
+
+
+  
 .our-service {
-  margin: 0 8.6px 26.3px 0;
-  display: block;
-  overflow-wrap: break-word;
-  font-family: 'Poppins';
-  font-weight: 700;
-  font-size: 64px;
-  color: #A1E2FD;
-  text-align: center; /* Pastikan teks berada di tengah */
-}
-
-.logo-container {
-  display: flex;
-  justify-content: center; /* Memusatkan elemen secara horizontal */
-  align-items: center; /* Menyelaraskan item secara vertikal di tengah */
-  border: 5px solid #6AC6ED; /* Border dengan ketebalan 10px dan warna biru */
-  padding: 15px; /* Padding di dalam setiap elemen */
-  border-radius: 25px; /* Membuat sudut border melengkung */
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan */
-  flex-wrap: nowrap; /* Mencegah elemen membungkus ke baris berikutnya */
-  width: auto; /* Mengatur lebar secara otomatis */
-  margin: 0 200px 100px; /* Menambahkan jarak di bagian luar bawah */
-}
-
-.logo-container > div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  margin: 50px; /* Jarak antar elemen, bisa disesuaikan */
-}
-
-.logo-container img {
-  max-width: 100px; /* Ukuran gambar, bisa disesuaikan */
-  margin-bottom: 10px; /* Jarak antara gambar dan teks */
-}
-
-.logo-container p {
-  font-size: 20px; /* Ukuran font 20px */
-  color: #A1E2FD; /* Warna font biru, bisa diubah sesuai kebutuhan */
-  margin: var(--paragraph-margin); /* Menggunakan variabel untuk margin */
-}
-
+    margin: 0 8.6px 26.3px 0;
+    display: block;
+    overflow-wrap: break-word;
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 20px; /* Ukuran font tetap */
+    color: #A1E2FD;
+    text-align: center; /* Pastikan teks berada di tengah */
+  }
+  
+  .logo-container {
+    display: flex;
+    justify-content: center; /* Memusatkan elemen secara horizontal */
+    align-items: center; /* Menyelaraskan item secara vertikal di tengah */
+    border: 5px solid #6AC6ED; /* Border dengan ketebalan 10px dan warna biru */
+    padding: 15px; /* Padding di dalam setiap elemen */
+    border-radius: 3vw; /* Membuat sudut border menjadi persegi tetapi responsif */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan */
+    flex-wrap: nowrap; /* Mencegah elemen membungkus ke baris berikutnya */
+    width: auto; /* Mengatur lebar secara otomatis */
+    margin: 0 5vw 8vh; /* Menambahkan margin kanan dan kiri border dengan unit responsif */
+  }
+  
+  
+  .logo-container > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 6vh; /* Jarak antar elemen dengan unit responsif */
+  }
+  
+  .logo-container img {
+    width: 5vw; /* Ukuran gambar responsif relatif terhadap lebar viewport */
+    height: auto; /* Tetap menjaga proporsi gambar */
+    margin-bottom: 1vh; /* Jarak antara gambar dan teks dengan unit responsif */
+  }
+  
+  
+  .logo-container p {
+    font-size: 1vw; /* Ukuran font responsif relatif terhadap lebar viewport */
+    color: #A1E2FD; /* Warna font biru, bisa diubah sesuai kebutuhan */
+    margin: 4vh; /* Menggunakan variabel untuk margin */
+    text-align: center; /* Rata tengah teks */
+  }
+  
 
   .about-us{
     color: #6AC6ED;
