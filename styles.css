@@ -173,7 +173,6 @@ nav{
     margin: 0 5vw 8vh; /* Menambahkan margin kanan dan kiri border dengan unit responsif */
   }
   
-  
   .logo-container > div {
     display: flex;
     flex-direction: column;
@@ -188,13 +187,57 @@ nav{
     margin-bottom: 1vh; /* Jarak antara gambar dan teks dengan unit responsif */
   }
   
-  
   .logo-container p {
     font-size: 1vw; /* Ukuran font responsif relatif terhadap lebar viewport */
     color: #A1E2FD; /* Warna font biru, bisa diubah sesuai kebutuhan */
     margin: 4vh; /* Menggunakan variabel untuk margin */
     text-align: center; /* Rata tengah teks */
   }
+  
+  /* Media queries untuk layar kecil */
+  @media (max-width: 768px) {
+    .our-service {
+      font-size: 6vw; /* Ukuran font lebih besar pada layar kecil */
+      margin: 100px 8.6px 26.3px 0; /* Sesuaikan margin untuk layar kecil */
+    }
+  
+    .logo-container {
+      flex-direction: column; /* Ubah tata letak ke kolom pada layar kecil */
+      margin: 0 3vw 6vh; /* Sesuaikan margin untuk layar kecil */
+    }
+  
+    .logo-container > div {
+      margin: 4vh 0; /* Kurangi margin antara elemen pada layar kecil */
+    }
+  
+    .logo-container img {
+      width: 10vw; /* Perbesar ukuran gambar pada layar kecil */
+      margin-bottom: 2vh; /* Sesuaikan jarak antara gambar dan teks */
+    }
+  
+    .logo-container p {
+      font-size: 3vw; /* Perbesar ukuran teks pada layar kecil */
+      margin: 2vh; /* Sesuaikan margin untuk teks */
+    }
+  }
+  
+  /* Media queries untuk layar sangat kecil (misalnya, smartphone) */
+  @media (max-width: 480px) {
+    .our-service {
+      font-size: 8vw; /* Ukuran font lebih besar pada layar sangat kecil */
+      margin: 80px 8.6px 20px 0; /* Sesuaikan margin untuk layar sangat kecil */
+    }
+  
+    .logo-container img {
+      width: 15vw; /* Perbesar ukuran gambar pada layar sangat kecil */
+    }
+  
+    .logo-container p {
+      font-size: 4vw; /* Perbesar ukuran teks pada layar sangat kecil */
+      margin: 2vh; /* Sesuaikan margin untuk teks */
+    }
+  }
+  
   
 
   .about-us{
