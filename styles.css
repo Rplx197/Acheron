@@ -1,3 +1,77 @@
+/* Media Queries untuk responsivitas */
+@media (max-width: 992px) {
+  .menu-item {
+    width: 45%; /* Dua kolom pada layar sedang */
+    padding: 60px 10px 80px 10px;
+  }
+
+  .menu-title {
+    font-size: 35px;
+  }
+
+  .order-button {
+    padding: 12px 60px;
+  }
+}
+
+@media (max-width: 576px) {
+  .menu-item {
+    width: 100%; /* Satu kolom pada layar kecil */
+    padding: 60px 10px 80px 10px;
+  }
+
+  .menu-title {
+    font-size: 30px;
+  }
+
+  .order-button {
+    padding: 10px 50px;
+  }
+
+  .title {
+    font-size: 45px;
+    margin-top: 100px;
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 400px) {
+  .menu-title {
+    font-size: 25px; /* Sesuaikan ukuran font pada layar sangat kecil */
+  }
+
+  .order-button {
+    padding: 8px 40px; /* Sesuaikan padding pada tombol */
+  }
+
+  .title {
+    font-size: 35px;
+    margin-top: 80px;
+    margin-bottom: 50px;
+  }
+}
+
+  :root {
+    --blue: #6AC6ED;
+}
+
+html {
+    position: relative;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    color: var(--blue);
+}
+
 *{
     font-family: 'Poppins';
     font-weight: 700em;
@@ -234,80 +308,6 @@ header {
 
 .order-button:hover {
   background-color: #F0F0F0;
-}
-
-/* Media Queries untuk responsivitas */
-@media (max-width: 992px) {
-  .menu-item {
-    width: 45%; /* Dua kolom pada layar sedang */
-    padding: 60px 10px 80px 10px;
-  }
-
-  .menu-title {
-    font-size: 35px;
-  }
-
-  .order-button {
-    padding: 12px 60px;
-  }
-}
-
-@media (max-width: 576px) {
-  .menu-item {
-    width: 100%; /* Satu kolom pada layar kecil */
-    padding: 60px 10px 80px 10px;
-  }
-
-  .menu-title {
-    font-size: 30px;
-  }
-
-  .order-button {
-    padding: 10px 50px;
-  }
-
-  .title {
-    font-size: 45px;
-    margin-top: 100px;
-    margin-bottom: 60px;
-  }
-}
-
-@media (max-width: 400px) {
-  .menu-title {
-    font-size: 25px; /* Sesuaikan ukuran font pada layar sangat kecil */
-  }
-
-  .order-button {
-    padding: 8px 40px; /* Sesuaikan padding pada tombol */
-  }
-
-  .title {
-    font-size: 35px;
-    margin-top: 80px;
-    margin-bottom: 50px;
-  }
-}
-
-  :root {
-    --blue: #6AC6ED;
-}
-
-html {
-    position: relative;
-    overflow-x: hidden;
-    padding: 0;
-    margin: 0;
-}
-
-body {
-    width: 100%;
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    margin: 0;
-    padding: 0;
-    color: var(--blue);
 }
 
 .card-vertical-line {
