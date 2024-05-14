@@ -11,23 +11,24 @@
   <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#navbar-scroll">
   <header>
     <nav class="navbar fixed-top d-flex flex-wrap justify-content-center py-3 px-5">
       <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
         <img src="assets/images/acheron.png" alt="" width="45px" height="45px" class="me-3" />
       </a>
-      <ul class="nav nav-pills px-3">
-        <li class="nav-item">
-          <a href="#Home" class="nav-link active" aria-current="page">Home</a>
-        </li>
-        <li class="nav-item"><a href="#About" class="nav-link">About</a></li>
-        <li class="nav-item"><a href="#Services" class="nav-link">Service</a></li>
-        <li class="nav-item"><a href="#Paket Laundry" class="nav-link">Paket Laundry</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
-      </ul>
+      <div id="navbar-scroll">
+        <ul class="nav nav-pills px-3">
+          <li class="nav-item">
+            <a href="#Home" class="nav-link active" aria-current="page">Home</a>
+          </li>
+          <li class="nav-item"><a href="#About" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#Services" class="nav-link">Service</a></li>
+          <li class="nav-item"><a href="#Order" class="nav-link">Paket Laundry</a></li>
+          <li class="nav-item"><a href="#Contact" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
     </nav>
-    <script src="js/navbar.js"></script>
   </header>
   <section id="Home">
     <div class="jumbotron">
@@ -105,7 +106,7 @@
 
 
 
-  <section id="Paket Laundry">
+  <section id="Order">
     <div class="container77">
       <h1 class="title font-semi-bold">ORDER NOW</h1>
       <section class="menu">
@@ -152,7 +153,7 @@
     </div>
   </section>
 
-  <section class="contact-section">
+  <section class="contact-section" id="Contact">
     <div class="contact-card">
         <div class="card">
             <div class="card-body">
