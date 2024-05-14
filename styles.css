@@ -148,31 +148,6 @@ nav{
     width: 100%;
 }
 
-.ambatron{
-    position: relative;
-    height: 1100px;
-    overflow: hidden;
-}
-
-.ambatron .vektor1{
-    float: right; /* Meletakkan vektor 1 di sebelah kanan */
-    margin-right: 20px; /* Menambahkan jarak antara vektor 1 dan konten lainnya */
-    background-image: url('assets/images/Vector\ 4.png');
-    height: 100%; /* Atur ketinggian sesuai kebutuhan */
-    background-size: cover;
-}
-
-
-.ambatron .vektor2{
-    float: left; /* Meletakkan vektor 2 di sebelah kiri */
-    margin-left: 20px; /* Menambahkan jarak antara vektor 2 dan konten lainnya */
-    background-image: url('assets/images/Vector\ 9.png');
-    height: 100%; /* Atur ketinggian sesuai kebutuhan */
-    background-size: cover;
-}
-
-
-
   
 .our-service {
     margin: 180px 8.6px 26.3px 0;
@@ -263,6 +238,7 @@ header {
   font-size: 60px;
   margin-top: 150px;
   margin-bottom: 90px;
+  text-align: center;
   color: #FFFFFF; /* Mengubah warna tulisan judul menjadi putih */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Memberikan efek drop shadow */
 }
