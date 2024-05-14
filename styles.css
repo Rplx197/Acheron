@@ -74,121 +74,49 @@ nav{
     width: 100%;
 }
 
-.service{
-    margin: 0 127.5px 168px 140px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: fit-content;
-    box-sizing: border-box;
+.our-service {
+  margin: 0 8.6px 26.3px 0;
+  display: block;
+  overflow-wrap: break-word;
+  font-family: 'Poppins';
+  font-weight: 700;
+  font-size: 64px;
+  color: #A1E2FD;
+  text-align: center; /* Pastikan teks berada di tengah */
 }
 
-.our-service {
-    margin: 0 8.6px 26.3px 0;
-    display: inline-block;
-    overflow-wrap: break-word;
-    font-family: 'Poppins';
-    font-weight: 700;
-    font-size: 40px;
-    color: #A1E2FD;
-  }
+.logo-container {
+  display: flex;
+  justify-content: center; /* Memusatkan elemen secara horizontal */
+  align-items: center; /* Menyelaraskan item secara vertikal di tengah */
+  border: 5px solid #6AC6ED; /* Border dengan ketebalan 10px dan warna biru */
+  padding: 15px; /* Padding di dalam setiap elemen */
+  border-radius: 25px; /* Membuat sudut border melengkung */
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan */
+  flex-wrap: nowrap; /* Mencegah elemen membungkus ke baris berikutnya */
+  width: auto; /* Mengatur lebar secara otomatis */
+  margin: 0 20px 100px; /* Menambahkan jarak di bagian luar bawah */
+}
 
-.container-11 {
-    border-radius: 100px;
-    border: 10px solid #A0E1FD;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    padding: 50px 80px 30px 80px;
-    width: fit-content;
-    box-sizing: border-box;
-  }
+.logo-container > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 50px; /* Jarak antar elemen, bisa disesuaikan */
+}
 
-.container {
-    margin: 0 51px 63px 51px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-self: flex-start;
-    width: 984px;
-    box-sizing: border-box;
-  }
+.logo-container img {
+  max-width: 100px; /* Ukuran gambar, bisa disesuaikan */
+  margin-bottom: 10px; /* Jarak antara gambar dan teks */
+}
 
-.container-10 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-self: flex-start;
-    width: 984px;
-    box-sizing: border-box;
-  }
-  
-.dryer {
-    margin-top: 4px;
-    width: 112px;
-    height: 112px;
-  }
+.logo-container p {
+  font-size: 20px; /* Ukuran font 20px */
+  color: #A1E2FD; /* Warna font biru, bisa diubah sesuai kebutuhan */
+  margin: var(--paragraph-margin); /* Menggunakan variabel untuk margin */
+}
 
-.dryer-explanation {
-    margin: 0 122.9px 72px 0;
-    display: inline-block;
-    text-align: center;
-    overflow-wrap: break-word;
-    font-family: 'Poppins';
-    font-weight: 400;
-    font-size: 18px;
-    color: #6AC6ED;
-  }
-
-.iron {
-    margin-top: 4px;
-    width: 112px;
-    height: 112px;
-  }
-
-.iron-explanation {
-    margin-right: 136.9px;
-    text-align: center;
-    overflow-wrap: break-word;
-    font-family: 'Poppins';
-    font-weight: 400;
-    font-size: 18px;
-    color: #6AC6ED;
-  }
-
-.coin {
-    margin: 2px 0;
-    width: 112px;
-    height: 112px;
-  }
-  
-.coin-explanation {
-    margin: 2px 130.4px 106px 0;
-    display: inline-block;
-    text-align: center;
-    overflow-wrap: break-word;
-    font-family: 'Poppins';
-    font-weight: 400;
-    font-size: 18px;
-    color: #6AC6ED;
-  }
-
-.van {
-    margin-top: 4px;
-    width: 112px;
-    height: 112px;
-  }
-
-.van-explanation {
-    margin: 2px 0 70px 0;
-    display: inline-block;
-    text-align: center;
-    overflow-wrap: break-word;
-    font-family: 'Poppins';
-    font-weight: 400;
-    font-size: 18px;
-    color: #6AC6ED;
-  }
 
   .about-us{
     color: #6AC6ED;
@@ -582,3 +510,6 @@ body {
 
 }
   
+.contant-text{
+   color: #6AC6ED;
+}
