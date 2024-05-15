@@ -331,13 +331,13 @@ nav{
   }
   
   .logo-container img {
-    width: 5vw; 
+    width: 6vw; 
     height: auto; 
     margin-bottom: 1vh; 
   }
   
   .logo-container p {
-    font-size: 1vw; 
+    font-size: 1.5vw; 
     color: #A1E2FD; 
     margin: 4vh;
     text-align: center; 
