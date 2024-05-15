@@ -598,3 +598,41 @@ header {
 .contant-text{
    color: #6AC6ED;
 }
+
+.cards {
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  width: 200px;
+  margin-right: 40px;
+  margin-left: 40px;
+}
+
+.cards p {
+  margin-top: 15px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.service-title{
+  color: #6AC6ED;
+  text-align: center;
+  font-weight: 600;
+}
+
+.wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: 4px solid #6AC6ED;
+  border-radius: 10px;
+  margin-bottom: 100px;
+}
+
+.cards img {
+  display: block;
+  margin: 0 auto;
+  width: 100px; /* Sesuaikan lebar gambar sesuai kebutuhan */
+  height: auto;
+}
