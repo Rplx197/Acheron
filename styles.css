@@ -260,6 +260,7 @@ header {
 }
 
 .title {
+  text-align: center;
   font-size: 60px;
   margin-top: 150px;
   margin-bottom: 90px;
