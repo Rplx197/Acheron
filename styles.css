@@ -349,13 +349,11 @@ nav{
   /* Order  */
 .container77 {
   background-color: #6AC6ED;
-  padding: 20px;
-  min-height: 100vh;
+  padding: 150px;
 }
 
 .title {
   font-size: 60px;
-  margin-top: 150px;
   margin-bottom: 90px;
   text-align: center;
   color: #FFFFFF; 
