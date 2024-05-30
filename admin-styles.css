@@ -1,0 +1,6 @@
+
+.nav.nav-pills.flex-column.mb-auto .nav-item .nav-link.active {
+    background-color: #fff;
+    border-radius: 20px;
+    color: #6AC6ED;
+}
