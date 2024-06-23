@@ -5,13 +5,15 @@ use App\Http\Controllers\PelangganController;
 use App\Http\Controllers\PesananController;
 use App\Http\Controllers\ItemPesananController;
 use App\Http\Controllers\TransaksiPembayaranController;
-use App\Models\TransaksiPembayaran;
+use App\Http\Controllers\LoginController;
+use App\Http\Controllers\LogoutController;
+use App\Http\Middleware\RoleMiddleware;
 
 Route::get('/', function () {
     return view('landing_page');
 });
 
-Route::controller(PelangganController::class)->group(function () {
+Route::middleware(RoleMiddleware::class)->controller(PelangganController::class)->group(function () {
         Route::get('/pelanggan', 'index')->name('pelanggan');
         Route::get('/pelanggan/create', 'create')->name('pelanggan.create');
         Route::post('/pelanggan/store', 'store')->name('pelanggan.store');
@@ -19,9 +21,9 @@ Route::controller(PelangganController::class)->group(function () {
         Route::put('/pelanggan/{id}/update', 'update');
         Route::delete('/pelanggan/{id}/delete', 'destroy');
     });
-;
 
-Route::controller(PesananController::class)->group(function () {
+
+Route::middleware(RoleMiddleware::class)->controller(PesananController::class)->group(function () {
     Route::get('/pesanan', 'index')->name('pesanan');
     Route::get('/pesanan/create', 'create')->name('pesanan.create');
     Route::post('/pesanan/store', 'store')->name('pesanan.store');
@@ -30,7 +32,7 @@ Route::controller(PesananController::class)->group(function () {
     Route::delete('/pesanan/{id}/delete', 'destroy');
 });
 
-Route::controller(ItemPesananController::class)->group(function () {
+Route::middleware(RoleMiddleware::class)->controller(ItemPesananController::class)->group(function () {
     Route::get('/item_pesanan', 'index')->name('item_pesanan');
     Route::get('/item_pesanan/create', 'create')->name('item_pesanan.create');
     Route::post('/item_pesanan/store', 'store')->name('item_pesanan.store');
@@ -39,7 +41,7 @@ Route::controller(ItemPesananController::class)->group(function () {
     Route::delete('/item_pesanan/{id}/delete', 'destroy');
 });
 
-Route::controller(TransaksiPembayaranController::class)->group(function () {
+Route::middleware(RoleMiddleware::class)->controller(TransaksiPembayaranController::class)->group(function () {
     Route::get('/transaksi_pembayaran', 'index')->name('transaksi_pembayaran');
     Route::get('/transaksi_pembayaran/create', 'create')->name('transaksi_pembayaran.create');
     Route::post('/transaksi_pembayaran/store', 'store')->name('transaksi_pembayaran.store');
@@ -51,3 +53,7 @@ Route::controller(TransaksiPembayaranController::class)->group(function () {
 Route::get('/login', function () {
     return view('login');
 });
+
+Route::post('/login', [LoginController::class, 'login']);
+
+Route::post('/logout', [LogoutController::class, 'logout']);

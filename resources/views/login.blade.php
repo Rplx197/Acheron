@@ -19,11 +19,12 @@
 
 <body>
     <div class="wrapper">
-        <form action="login.php" method="POST">
+        <form action="/login" method="POST">
+            @csrf
             <img src="assets/images/Acheron_home.png">
             <h1>Acheron Exspress Laundry</h1>
             <div class="input-box">
-                <input type="text" name="username" placeholder="Username" required>
+                <input type="text" name="email" placeholder="Email" required>
                 <i class='bx bxs-user'></i>
             </div>
             <div class="input-box">
