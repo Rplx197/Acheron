@@ -423,7 +423,7 @@ nav{
     width: 100%;
     display: flex;
     position: relative;
-    min-height: 100vh;
+    min-height: 160vh;
     height: 100%;
 }
 
