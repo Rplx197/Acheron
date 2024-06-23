@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,23 +7,21 @@
     <link rel="stylesheet" href="admin-styles.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link rel="shortcut icon" href="assets/images/acheron.png" type="image/x-icon">
 </head>
-
 <body>
-    <!-- sidebar -->
-    <div class="d-flex flex-nowrap" style="height: 100vh;">
+    <div class="sidebar d-flex flex-nowrap" style="height: 100vh;">
         <div class="d-flex flex-column flex-shrink-0 p-3" style="width: 280px; background-color: #6AC6ED; color: white;">
-            <a href="/"
-                class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none text-white">
+            <div class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none text-white">
                 <img src="assets/images/acheron.png" alt="">
                 <span class="fs-4">Acheron</span>
-            </a>
+            </div>
             <hr>
             <ul class="nav nav-pills flex-column mb-auto">
                 <li class="nav-item">
-                    <a href="#" class="nav-link active">
+                    <a href="pelanggan" class="nav-link {{ Request::is('pelanggan')? "active":"text-white" }}">
                         <svg class="bi pe-none me-2" width="16" height="16">
                             <use xlink:href="#home"></use>
                         </svg>
@@ -32,7 +29,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="nav-link text-white">
+                    <a href="item_pesanan" class="nav-link {{ Request::is('item_pesanan')? "active":"text-white" }}">
                         <svg class="bi pe-none me-2" width="16" height="16">
                             <use xlink:href="#speedometer2"></use>
                         </svg>
@@ -40,7 +37,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="nav-link text-white">
+                    <a href="pesanan" class="nav-link {{ Request::is('pesanan')? "active":"text-white" }}">
                         <svg class="bi pe-none me-2" width="16" height="16">
                             <use xlink:href="#table"></use>
                         </svg>
@@ -48,7 +45,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="nav-link text-white">
+                    <a href="transaksi_pembayaran" class="nav-link {{ Request::is('transaksi_pembayaran')? "active":"text-white" }}">
                         <svg class="bi pe-none me-2" width="16" height="16">
                             <use xlink:href="#grid"></use>
                         </svg>
@@ -59,20 +56,3 @@
             <hr>
         </div>
         <!-- sidebar -->
-        <div class="p-5">
-            <h1 class="" style="color: #6AC6ED;">Pelanggan</h1>
-            <div class="row p-2 mt-3">
-                <div class="col-md-6">
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2 rounded-5" type="search" placeholder="Search" aria-label="Search">
-                      </form>
-                </div>
-                <div class="col-md-6">
-                    <button class="rounded-5 text-white" type="submit" style="width: 240px; height: 100%; background-color: #6AC6ED; border: none;">Tambah Data</button>
-                </div>
-            </div>
-        </div>
-    </div>
-</body>
-
-</html>
