@@ -94,4 +94,10 @@ class PelangganController extends Controller
         return redirect('pelanggan')->with('success', 'pelanggan has been deleted!');
     }
 
+    public function search(Request $request)
+    {
+        $data = Pelanggan::where('nama', 'LIKE', '%'.$request->search.'%')->get();
+        
+        return view('pelanggan', ['pelanggan' => $data]);
+    }
 }

@@ -3,8 +3,8 @@
     <h1 class="" style="color: #6AC6ED;">Transaksi Pembayaran</h1>
     <div class="row p-2 mt-3">
         <div class="col-md-3">
-            <form class="d-flex" role="search">
-                <input class="form-control me-2 rounded-5" type="search" placeholder="Search" aria-label="Search">
+            <form class="d-flex" role="search" method="GET" action="{{ url('/transaksi_pembayaran-search') }}">
+                <input class="form-control me-2 rounded-5" name="search" type="search" placeholder="Search ID Pesanan" aria-label="Search">
             </form>
         </div>
         <div class="col-md-6">
@@ -41,7 +41,7 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="total">Total:</label>
-                                    <input type="text" class="form-control" id="total" name="total" placeholder="Masukkan Total">
+                                    <input type="number" class="form-control" id="total" name="total" placeholder="Masukkan Total">
                                 </div>
                                 <div class="form-group">
                                     <label for="tanggal_pembayaran">Tanggal Pembayaran:</label>
@@ -111,7 +111,7 @@
                                                 </div>
                                                 <div class="form-group">
                                                     <label for="total">Total:</label>
-                                                    <input type="text" class="form-control" id="total" name="total" value="{{$t->total}}" placeholder="Masukkan Total">
+                                                    <input type="number" class="form-control" id="total" name="total" value="{{$t->total}}" placeholder="Masukkan Total">
                                                 </div>
                                                 <div class="form-group">
                                                     <label for="tanggal_pembayaran">Tanggal Pembayaran:</label>

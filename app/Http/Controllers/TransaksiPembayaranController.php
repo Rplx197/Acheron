@@ -94,4 +94,11 @@ class TransaksiPembayaranController extends Controller
         TransaksiPembayaran::destroy($id);
         return redirect('transaksi_pembayaran')->with('success', 'transaksi pemabayaran has been deleted!');
     }
+
+    public function search(Request $request)
+    {
+        $data = TransaksiPembayaran::where('id_pesanan', 'LIKE', '%'.$request->search.'%')->get();
+        $pesanan = Pesanan::all();
+        return view('transaksi_pembayaran', ['transaksi_pembayaran' => $data, 'pesanan' => $pesanan]);
+    }
 }

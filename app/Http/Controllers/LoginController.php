@@ -17,7 +17,7 @@ class LoginController extends Controller
 
         Auth::attempt($validatedData);
         if (auth()->user()->role === 'karyawan') {
-            return redirect('/');
+            return redirect('karyawan');
         } else if (auth()->user()->role === 'kasir') {
             return redirect()->route('pelanggan');
         }

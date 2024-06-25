@@ -4,8 +4,8 @@
     <h1 class="" style="color: #6AC6ED;">Pelanggan</h1>
     <div class="row p-2 mt-3">
         <div class="col-md-3">
-            <form class="d-flex" role="search">
-                <input class="form-control me-2 rounded-5" type="search" placeholder="Search" aria-label="Search">
+            <form class="d-flex" role="search" method="GET" action="{{ url('/pelanggan-search') }}">
+                <input class="form-control me-2 rounded-5" name="search" type="search" placeholder="Search Nama Pelanggan" aria-label="Search">
             </form>
         </div>
         <div class="col-md-6">
@@ -38,7 +38,7 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="telepon">No. Telepon:</label>
-                                    <input type="text" class="form-control" id="telepon" name="telepon" placeholder="Masukkan No. Telepon Pelanggan">
+                                    <input type="number" class="form-control" id="telepon" name="telepon" placeholder="Masukkan No. Telepon Pelanggan">
                                 </div>
                                 <div class="form-group">
                                     <label for="email">Email:</label>
@@ -58,7 +58,7 @@
     </div>
     <div class="row p-2 mt-3">
         <div class="col-12">
-            <table class="table table-striped table-bordered border-white" style="width: 100% !important;">
+            <table class="table table-striped table-bordered border-white" style="width: 100% !important; color: #6AC6ED;">
                 <thead class="table-primary">
                     <tr>
                         <th scope="col">ID</th>
@@ -104,7 +104,7 @@
                                                 </div>
                                                 <div class="form-group">
                                                     <label for="telepon">No. Telepon:</label>
-                                                    <input type="text" class="form-control" id="telepon" name="telepon" value="{{$p->telepon}}" placeholder="Masukkan No. Telepon Pelanggan">
+                                                    <input type="number" class="form-control" id="telepon" name="telepon" value="{{$p->telepon}}" placeholder="Masukkan No. Telepon Pelanggan">
                                                 </div>
                                                 <div class="form-group">
                                                     <label for="email">Email:</label>

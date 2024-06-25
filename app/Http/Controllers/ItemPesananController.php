@@ -94,4 +94,12 @@ class ItemPesananController extends Controller
         ItemPesanan::destroy($id);
         return redirect('item_pesanan')->with('success', 'item pesanan has been deleted!');
     }
+
+    public function search(Request $request)
+    {
+        $data = ItemPesanan::where('id_pesanan', 'LIKE', '%'.$request->search.'%')->get();
+        $pesanan = Pesanan::all();
+        return view('item_pesanan', ['item_pesanan' => $data, 'pesanan' => $pesanan]);
+    }
+    
 }

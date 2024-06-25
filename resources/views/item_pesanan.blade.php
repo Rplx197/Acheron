@@ -3,8 +3,8 @@
     <h1 class="" style="color: #6AC6ED;">Item Pesanan</h1>
     <div class="row p-2 mt-3">
         <div class="col-md-3">
-            <form class="d-flex" role="search">
-                <input class="form-control me-2 rounded-5" type="search" placeholder="Search" aria-label="Search">
+            <form class="d-flex" role="search" method="GET" action="{{ url('/item_pesanan-search') }}">
+                <input class="form-control me-2 rounded-5" name="search" type="search" placeholder="Search ID Pesanan" aria-label="Search">
             </form>
         </div>
         <div class="col-md-6">
@@ -29,7 +29,7 @@
                                 @csrf
                                 <div class="form-group">
                                     <label for="id_pesanan">ID Pesanan:</label>
-                                    <select class="form-select" name="id_pesanan" aria-label="Default select example">
+                                    <select class="form-select" name="id_pesanan">
                                         @foreach($pesanan as $p)
                                         <option value="{{$p->id}}">{{$p->id}}</option>
                                         @endforeach
@@ -37,15 +37,19 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="jenis_layanan">Jenis Layanan:</label>
-                                    <input type="text" class="form-control" id="jenis_layanan" name="jenis_layanan" placeholder="Masukkan Jenis Layanan">
+                                    <select class="form-select" id="jenis_layanan" name="jenis_layanan">
+                                        <option value="Economy">Economy</option>
+                                        <option value="Reguler">Reguler</option>
+                                        <option value="Priority">Priority</option>
+                                    </select>
                                 </div>
                                 <div class="form-group">
                                     <label for="jumlah_item">Jumlah Item:</label>
-                                    <input type="text" class="form-control" id="jumlah_item" name="jumlah_item" placeholder="Masukkan Jumlah Item">
+                                    <input type="number" class="form-control" id="jumlah_item" name="jumlah_item" placeholder="Masukkan Jumlah Item">
                                 </div>
                                 <div class="form-group">
                                     <label for="harga_per_item">Harga Per Item:</label>
-                                    <input type="text" class="form-control" id="harga_per_item" name="harga_per_item" placeholder="Masukkan Harga Per Item">
+                                    <input type="number" class="form-control" id="harga_per_item" name="harga_per_item" placeholder="Masukkan Harga Per Item">
                                 </div>
                                 <div class="modal-footer">
                                     <button type="submit" class="btn btn-success">Simpan</button>
@@ -107,15 +111,19 @@
                                                 </div>
                                                 <div class="form-group">
                                                     <label for="jenis_layanan">Jenis Layanan:</label>
-                                                    <input type="text" class="form-control" id="jenis_layanan" name="jenis_layanan" value="{{$i->jenis_layanan}}" placeholder="Masukkan Jenis Layanan">
+                                                    <select class="form-select" id="jenis_layanan" name="jenis_layanan">
+                                                        <option value="Economy">Economy</option>
+                                                        <option value="Reguler">Reguler</option>
+                                                        <option value="Priority">Priority</option>
+                                                    </select>
                                                 </div>
                                                 <div class="form-group">
                                                     <label for="jumlah_item">Jumlah Item:</label>
-                                                    <input type="text" class="form-control" id="jumlah_item" name="jumlah_item" value="{{$i->jumlah_item}}" placeholder="Masukkan Jumlah Item">
+                                                    <input type="number" class="form-control" id="jumlah_item" name="jumlah_item" value="{{$i->jumlah_item}}" placeholder="Masukkan Jumlah Item">
                                                 </div>
                                                 <div class="form-group">
                                                     <label for="harga_per_item">Harga Per Item:</label>
-                                                    <input type="text" class="form-control" id="harga_per_item" name="harga_per_item" value="{{$i->harga_per_item}}" placeholder="Masukkan Harga Per Item">
+                                                    <input type="number" class="form-control" id="harga_per_item" name="harga_per_item" value="{{$i->harga_per_item}}" placeholder="Masukkan Harga Per Item">
                                                 </div>
                                                 <div class="modal-footer">
                                                     <button type="submit" class="btn btn-success">Simpan</button>

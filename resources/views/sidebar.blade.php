@@ -56,7 +56,7 @@
                 <li>
                     <form action="/logout" method="post">
                         @csrf
-                        <button class="btn btn-block btn-primary text-white" type="submit">Logout</button>
+                        <button class="nav-link text-white" type="submit">Logout</button>
                     </form>
                 </li>
             </ul>

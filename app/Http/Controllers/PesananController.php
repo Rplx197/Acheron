@@ -16,7 +16,7 @@ class PesananController extends Controller
     {
         $pesanan = Pesanan::with("pelanggan")->get();
         $pelanggan = Pelanggan::all();
-        return view('pesanan', ['pesanan' => $pesanan, 'pelanggan' => $pelanggan] );
+        return view('pesanan', ['pesanan' => $pesanan, 'pelanggan' => $pelanggan]);
     }
 
     /**
@@ -95,5 +95,12 @@ class PesananController extends Controller
     {
         Pesanan::destroy($id);
         return redirect('pesanan')->with('success', 'pesanan has been deleted!');
+    }
+
+    public function search(Request $request)
+    {
+        $data = Pesanan::where('tanggal_penerimaan', 'LIKE', '%'.$request->search.'%')->get();
+        $pelanggan = Pelanggan::all();
+        return view('pesanan', ['pesanan' => $data, 'pelanggan' => $pelanggan]);
     }
 }

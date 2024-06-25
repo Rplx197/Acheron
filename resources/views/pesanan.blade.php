@@ -3,8 +3,8 @@
     <h1 class="" style="color: #6AC6ED;">Pesanan</h1>
     <div class="row p-2 mt-3">
         <div class="col-md-3">
-            <form class="d-flex" role="search">
-                <input class="form-control me-2 rounded-5" type="search" placeholder="Search" aria-label="Search">
+        <form class="d-flex" role="search" method="GET" action="{{ url('/pesanan-search') }}">
+                <input class="form-control me-2 rounded-5" name="search" type="search" placeholder="Search Tanggal Penerimaan" aria-label="Search">
             </form>
         </div>
         <div class="col-md-6">
@@ -45,11 +45,15 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="status_pesanan">Status Pesanan:</label>
-                                    <input type="status_pesanan" class="form-control" id="status_pesanan" name="status_pesanan"  placeholder="Masukkan Status Pesanan">
+                                    <select class="form-select" id="status_pesanan" name="status_pesanan">
+                                        <option value="Proses">Proses</option>
+                                        <option value="Done">Done</option>
+                                        <option value="Sudah Diambil">Sudah Diambil</option>
+                                    </select>
                                 </div>
                                 <div class="form-group">
                                     <label for="catatan">Catatan:</label>
-                                    <input type="catatan" class="form-control" id="catatan" name="catatan" placeholder="Masukkan Catatan Pesanan">
+                                    <input type="text" class="form-control" id="catatan" name="catatan" placeholder="Masukkan Catatan Pesanan">
                                 </div>
                                 <div class="modal-footer">
                                     <button type="submit" class="btn btn-success">Simpan</button>
@@ -70,7 +74,7 @@
                     <tr>
                         <th scope="col">ID</th>
                         <th scope="col">Nama Pelanggan</th>
-                        <th scope="col">Tanggal Pesanan</th>
+                        <th scope="col">Tanggal Penerimaan</th>
                         <th scope="col">Tanggal Pengambilan Item</th>
                         <th scope="col">Status Pesanan</th>
                         <th scope="col">Catatan</th>
@@ -121,11 +125,15 @@
                                                 </div>
                                                 <div class="form-group">
                                                     <label for="status_pesanan">Status Pesanan:</label>
-                                                    <input type="status_pesanan" class="form-control" id="status_pesanan" name="status_pesanan" value="{{$p->status_pesanan}}" placeholder="Masukkan Status Pesanan">
+                                                    <select class="form-select" id="status_pesanan" name="status_pesanan">
+                                                        <option value="Proses">Proses</option>
+                                                        <option value="Done">Done</option>
+                                                        <option value="Sudah Diambil">Sudah Diambil</option>
+                                                    </select>
                                                 </div>
                                                 <div class="form-group">
                                                     <label for="catatan">Catatan:</label>
-                                                    <input type="catatan" class="form-control" id="catatan" name="catatan" value="{{$p->catatan}}" placeholder="Masukkan Catatan Pesanan">
+                                                    <input type="text" class="form-control" id="catatan" name="catatan" value="{{$p->catatan}}" placeholder="Masukkan Catatan Pesanan">
                                                 </div>
                                                 <div class="modal-footer">
                                                     <button type="submit" class="btn btn-success">Simpan</button>

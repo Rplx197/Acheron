@@ -165,26 +165,21 @@
                 </div>
                 <div class="card-body-item right">
                     <h3>CONTACT US</h3>
-                    <form class="app-form">
-                        <div class="app-form-group">
-                            <label for="address">Address</label>
-                            <p class="contant-text">Jln.Raya Bakungan, Sleman, Yogyakarta</p>
-                        </div>
-                        <div class="app-form-group">
-                            <label for="email">Email</label>
-                            <p class="contant-text">aceronlaundry@gmail.com</p>
-                        </div>
-                        <div class="app-form-group">
-                            <label for="phone">Phone</label>
-                            <p class="contant-text">0812345678910</p>
-                        </div>
-                    </form>
-                    <div class="card-footer-item">
-                        <p>Social Media</p>
-                        <div class="card-footer-social-media">
-                            <img src="assets/images/instagram_logo.png" alt="">
-                            <img src="assets/images/twitter_logo.png" alt="">
-                            <img src="assets/images/facebook_logo.png" alt="">
+                    <div class="app-form">
+                      <div class="app-form-group">
+                        <label for="email">Email</label>
+                        <p class="contant-text">aceronlaundry@gmail.com</p>
+                      </div>
+                      <div class="app-form-group">
+                        <label for="phone">Phone</label>
+                        <p class="contant-text">0812345678910</p>
+                      </div>
+                      <div class="app-form-group">
+                          <label for="address">Address</label>
+                          <p class="contant-text">Tiyosan, Condongcatur, Kec. Depok, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55281</p>
+                      </div>
+                        <div class="app-form-group ">
+                            <a href="https://maps.app.goo.gl/oCmXgagfYGyWThTw6" class="btn-kunjungi p-2 px-4">Kunjungi</a>
                         </div>
                     </div>
                 </div>

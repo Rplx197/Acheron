@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PelangganController;
 use App\Http\Controllers\PesananController;
 use App\Http\Controllers\ItemPesananController;
+use App\Http\Controllers\KaryawanController;
 use App\Http\Controllers\TransaksiPembayaranController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\LogoutController;
@@ -20,6 +21,7 @@ Route::middleware(RoleMiddleware::class)->controller(PelangganController::class)
         Route::get('/pelanggan/{id}/edit', 'edit');
         Route::put('/pelanggan/{id}/update', 'update');
         Route::delete('/pelanggan/{id}/delete', 'destroy');
+        Route::get('/pelanggan-search', 'search')->name('pelanggan');
     });
 
 
@@ -30,6 +32,7 @@ Route::middleware(RoleMiddleware::class)->controller(PesananController::class)->
     Route::get('/pesanan/{id}/edit', 'edit');
     Route::put('/pesanan/{id}/update', 'update');
     Route::delete('/pesanan/{id}/delete', 'destroy');
+    Route::get('/pesanan-search', 'search')->name('pesanan');
 });
 
 Route::middleware(RoleMiddleware::class)->controller(ItemPesananController::class)->group(function () {
@@ -39,6 +42,7 @@ Route::middleware(RoleMiddleware::class)->controller(ItemPesananController::clas
     Route::get('/item_pesanan/{id}/edit', 'edit');
     Route::put('/item_pesanan/{id}/update', 'update');
     Route::delete('/item_pesanan/{id}/delete', 'destroy');
+    Route::get('/item_pesanan-search', 'search')->name('item_pesanan');
 });
 
 Route::middleware(RoleMiddleware::class)->controller(TransaksiPembayaranController::class)->group(function () {
@@ -48,11 +52,14 @@ Route::middleware(RoleMiddleware::class)->controller(TransaksiPembayaranControll
     Route::get('/transaksi_pembayaran/{id}/edit', 'edit');
     Route::put('/transaksi_pembayaran/{id}/update', 'update');
     Route::delete('/transaksi_pembayaran/{id}/delete', 'destroy');
+    Route::get('/transaksi_pembayaran-search', 'search')->name('transaksi_pembayaran');
 });
 
 Route::get('/login', function () {
     return view('login');
 });
+
+Route::get('/karyawan', [KaryawanController::class, 'index']);
 
 Route::post('/login', [LoginController::class, 'login']);
 
