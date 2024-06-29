@@ -31,6 +31,12 @@
   .desc h1 {
     display: none !important;
   }
+
+  .container77 {
+    background-color: #6AC6ED;
+    padding: 15px;
+    margin-top: 100px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -94,6 +100,12 @@
     font-size: 3vw; 
     margin: 2vh; 
   }
+
+  .container77 {
+    background-color: #6AC6ED;
+    padding: 15px;
+    margin-top: 900px;
+  }
 }
 
 /* Media queries untuk layar sangat kecil (misalnya, smartphone) */
@@ -112,6 +124,11 @@
     margin: 2vh;
   }
   
+  #Services{
+    margin-top: 20px;
+    height: 90vh;
+    padding-bottom: 200px;
+  }
 }
 
 @media only screen and (max-width: 540px) {

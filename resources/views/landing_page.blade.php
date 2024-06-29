@@ -74,7 +74,7 @@
   <div class="vektor1"></div>
 
   
-  <section id="Services" style="min-height: 600px;">
+  <section id="Services">
     <div class="container py-5">
       <h1 class="service-title mb-3">Our Services</h1>
       <div class="row p-5 rounded-5" style="border: 4px solid #6AC6ED">
@@ -87,19 +87,19 @@
         <div class="col-12 col-md-6 col-lg-3">
           <div class="p-3 d-flex flex-column justify-content-center align-items-center gap-4">
             <img src="assets/images/iron.png" style="width: 50%;">
-            <p>Wash thoroughly to remove all stains and dirt on your clothes</p>
+            <p>Makes your clothes neat and fragrant and doesn't damage clothing fibers</p>
           </div>
         </div>
         <div class="col-12 col-md-6 col-lg-3">
           <div class="p-3 d-flex flex-column justify-content-center align-items-center gap-4">
             <img src="assets/images/coin.png" style="width: 50%;">
-            <p>Wash thoroughly to remove all stains and dirt on your clothes</p>
+            <p>Save your monthly expenses!</p>
           </div>
         </div>
         <div class="col-12 col-md-6 col-lg-3">
           <div class="p-3 d-flex flex-column justify-content-center align-items-center gap-4">
             <img src="assets/images/van.png" style="width: 50%;">
-            <p>Wash thoroughly to remove all stains and dirt on your clothes</p>
+            <p>Free pick-up and drop-off service up to a 3km radius</p>
           </div>
         </div>
       </div>
