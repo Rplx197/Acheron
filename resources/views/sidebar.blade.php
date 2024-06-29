@@ -54,6 +54,14 @@
                     </a>
                 </li>
                 <li>
+                    <a href="content" class="nav-link {{ Request::is('content')? "active":"text-white" }}">
+                        <svg class="bi pe-none me-2" width="16" height="16">
+                            <use xlink:href="#grid"></use>
+                        </svg>
+                        Content
+                    </a>
+                </li>
+                <li>
                     <form action="/logout" method="post">
                         @csrf
                         <button class="nav-link text-white" type="submit">Logout</button>

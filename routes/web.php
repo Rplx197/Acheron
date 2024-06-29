@@ -6,13 +6,18 @@ use App\Http\Controllers\PesananController;
 use App\Http\Controllers\ItemPesananController;
 use App\Http\Controllers\KaryawanController;
 use App\Http\Controllers\TransaksiPembayaranController;
+use App\Http\Controllers\ContentController;
+use App\Http\Controllers\LandingPageController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\LogoutController;
 use App\Http\Middleware\RoleMiddleware;
 
-Route::get('/', function () {
-    return view('landing_page');
-});
+// Route::get('/', function () {
+//     return view('landing_page', [LandingPageController::class, 'index']);
+// });
+
+Route::get('/', [LandingPageController::class, 'index']);
+
 
 Route::middleware(RoleMiddleware::class)->controller(PelangganController::class)->group(function () {
         Route::get('/pelanggan', 'index')->name('pelanggan');
@@ -53,6 +58,12 @@ Route::middleware(RoleMiddleware::class)->controller(TransaksiPembayaranControll
     Route::put('/transaksi_pembayaran/{id}/update', 'update');
     Route::delete('/transaksi_pembayaran/{id}/delete', 'destroy');
     Route::get('/transaksi_pembayaran-search', 'search')->name('transaksi_pembayaran');
+});
+
+Route::middleware(RoleMiddleware::class)->controller(ContentController::class)->group(function () {
+    Route::get('/content', 'index')->name('content');
+    Route::get('/content/{id}/edit', 'edit');
+    Route::put('/content/{id}/update', 'update');
 });
 
 Route::get('/login', function () {

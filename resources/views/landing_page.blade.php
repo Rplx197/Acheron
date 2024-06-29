@@ -110,45 +110,20 @@
     <div class="container77">
       <h1 class="title font-semi-bold">ORDER NOW</h1>
       <section class="menu">
+        @foreach($content as $c)
         <div class="menu-item">
           <div class="border-logo">
-            <img class="menu-logo" src="assets/images/priority_logo.svg" alt="Priority Laundry">
+            <img class="menu-logo" src="assets/images/{{ $c->icon }}" alt="Priority Laundry">
           </div>
-          <h2 class="menu-title font-semi-bold">Priority</h2>
+          <h2 class="menu-title font-semi-bold">{{ $c->judul }}</h2>
           <ul class="menu-list font-semi-bold">
-            <li>2 Day Service Completed</li>
-            <li>Shuttle Service</li>
-            <li>Clothes have been ironed</li>
-            <li>Premium fragrance</li>
-            <li>One Machine One Customer</li>
+            <li>{{ $c->desc1 }}</li>
+            <li>{{ $c->desc2 }}</li>
+            <li>{{ $c->desc3 }}</li>
           </ul>
-          <button class="order-button font-semi-bold">Rp.8000/kg</button>
+          <button class="order-button font-semi-bold">{{ $c->harga }}</button>
         </div>
-        <div class="menu-item">
-          <div class="border-logo">
-            <img class="menu-logo" src="assets/images/reguler_logo.svg" alt="Regular Laundry">
-          </div>
-          <h2 class="menu-title font-semi-bold">Reguler</h2>
-          <ul class="menu-list font-semi-bold">
-            <li>3 Day Service Completed</li>
-            <li>Shuttle Service</li>
-            <li>Clothes have been ironed</li>
-            <li>Premium fragrance</li>
-          </ul>
-          <button class="order-button font-semi-bold">Rp.6000/kg</button>
-        </div>
-        <div class="menu-item">
-          <div class="border-logo">
-            <img class="menu-logo" src="assets/images/economy_logo.svg" alt="Economy Laundry">
-          </div>
-          <h2 class="menu-title font-semi-bold">Economy</h2>
-          <ul class="menu-list font-semi-bold">
-            <li>3 Day Service Completed</li>
-            <li>Clothes have been ironed</li>
-            <li>Premium fragrance</li>
-          </ul>
-          <button class="order-button font-semi-bold">Rp.4000/kg</button>
-        </div>
+        @endforeach
       </section>
     </div>
   </section>
